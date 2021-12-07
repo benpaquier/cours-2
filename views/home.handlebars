@@ -1,0 +1,20 @@
+<h1>{{title}}</h1>
+
+<p>Welcome to the homepage</p>
+
+{{#if isMinor}}
+  <p>Vous etes mineur</p>
+{{else}}
+  <p>Vous etes majeur</p>
+{{/if}}
+
+<ul>
+  {{#each names}}
+    <li>
+      <p>{{this.id}}</p>
+      <p>{{this.name}}</p>
+    </li>
+  {{/each}}
+</ul>
+
+<input />
